@@ -1,0 +1,94 @@
+% Common packages
+\usepackage[UTF8]{ctex}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{microtype}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{acronym}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{enumitem}
+\usepackage[pagebackref=true,breaklinks=true,colorlinks]{hyperref}
+\usepackage{xspace}
+\usepackage{setspace}
+\usepackage[skip=3pt,font=small]{subcaption}
+\usepackage[skip=3pt,font=small]{caption}
+\usepackage{amsmath}
+\usepackage[capitalise]{cleveref}
+\usepackage{booktabs,tabularx,colortbl,multirow,array,makecell}
+% \usepackage{overpic,wrapfig}
+\usepackage{xparse}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\usepackage{xltxtra}
+
+\usepackage{setspace}
+
+\linespread{1.5}
+\zihao{5}
+
+% 我们正在努力适配清华大学社科学报的文献注释规范！
+% \usepackage[backend=refer,style=verbose-trad2]{biblatex}
+% \addbibresource{reference.bib}
+% \usepackage{gbt7714}
+\usepackage{pifont}
+\renewcommand\thefootnote{\ding{\numexpr171+\value{footnote}}}%roman
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+
+% 使用 Arial、Times New Roman 字体
+\setromanfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xparse}
+
+\hypersetup{pdfencoding=auto,colorlinks=true,allcolors=black}
+
+% Handy shorthand
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+\def\eg{\emph{e.g}\onedot} 
+\def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot} 
+\def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{c.f}\onedot} 
+\def\Cf{\emph{C.f}\onedot}
+\def\etc{\emph{etc}\onedot} 
+\def\vs{\emph{vs}\onedot}
+\def\wrt{w.r.t\onedot} 
+\def\dof{d.o.f\onedot}
+\def\etal{\emph{et al}\onedot}
+\makeatother
+
+% Text Color
+\newcommand*{\red}{\textcolor{red}}
+\newcommand*{\green}{\textcolor{green}}
+\newcommand*{\blue}{\textcolor{blue}}
+\newcommand*{\gray}{\textcolor{gray}}
+\definecolor{gray}{gray}{0.9}
+
+\setlength\floatsep{0.5\baselineskip plus 3pt minus 2pt}
+\setlength\textfloatsep{0.5\baselineskip plus 3pt minus 2pt}
+\setlength\dbltextfloatsep{0.5\baselineskip plus 3pt minus 2pt}
+\setlength\intextsep{0.5\baselineskip plus 3pt minus 2pt}
+
+\makeatother
+
+% Clever references
+\crefname{algorithm}{算法}{算法}
+\Crefname{algorithm}{算法}{算法}
+\crefname{section}{小节}{小节}
+\Crefname{section}{小节}{小节}
+\crefname{table}{表格}{表格}
+\Crefname{table}{表格}{表格}
+\crefname{figure}{图}{图}
+\Crefname{figure}{图}{图}
+
+% Acronym
+\acrodef{thu}[THU]{Tsinghua University}
